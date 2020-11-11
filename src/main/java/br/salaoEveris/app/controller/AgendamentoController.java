@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.salaoEveris.app.request.AgendamentoRequest;
 import br.salaoEveris.app.response.BaseResponse;
-import br.salaoEveris.app.response.ListRelAgendamentoResponse;
 import br.salaoEveris.app.service.AgendamentoService;
 
 @RestController

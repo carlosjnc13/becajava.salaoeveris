@@ -6,12 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
 import java.time.LocalDateTime;
-import java.util.Calendar;
-
 
 @Entity
 public class Agendamento {
@@ -20,8 +15,7 @@ public class Agendamento {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Temporal(TemporalType.TIMESTAMP) java.util.Date dateAndTime2;
-	private Calendar dataHora;
+	private LocalDateTime dataHora;
 	
 	@ManyToOne
 	@JoinColumn(name = "clienteId")
@@ -39,11 +33,11 @@ public class Agendamento {
 		this.id = id;
 	}
 
-	public Calendar getDataHora() {
+	public LocalDateTime getDataHora() {
 		return dataHora;
 	}
 
-	public void setDataHora(Calendar dataHora) {
+	public void setDataHora(LocalDateTime dataHora) {
 		this.dataHora = dataHora;
 	}
 

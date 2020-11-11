@@ -1,16 +1,12 @@
 package br.salaoEveris.app.service;
 
-
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.Calendar;
 
 import org.springframework.stereotype.Service;
 import br.salaoEveris.app.model.Agendamento;
 import br.salaoEveris.app.repository.AgendamentoRepository;
 import br.salaoEveris.app.request.AgendamentoRequest;
 import br.salaoEveris.app.response.BaseResponse;
-import br.salaoEveris.app.response.ListRelAgendamentoResponse;
 
 @Service
 public class AgendamentoService {
