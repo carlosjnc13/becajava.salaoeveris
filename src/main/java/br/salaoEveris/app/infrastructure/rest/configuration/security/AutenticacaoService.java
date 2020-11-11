@@ -1,4 +1,4 @@
-package br.salaoEveris.app.config.security;
+package br.salaoEveris.app.infrastructure.rest.configuration.security;
 
 import java.util.Optional;
 

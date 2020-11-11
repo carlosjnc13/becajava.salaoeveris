@@ -1,4 +1,4 @@
-package br.salaoEveris.app.config.security;
+package br.salaoEveris.app.infrastructure.rest.configuration.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
